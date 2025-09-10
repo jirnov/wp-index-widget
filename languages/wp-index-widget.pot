@@ -1,0 +1,40 @@
+# Copyright (C) 2025 Evgenii Zhirnov
+# This file is distributed under the same license as the Category Tags Index Widget plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Category Tags Index Widget 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/index-widget\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2025-04-15T12:33:18+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.11.0\n"
+"X-Domain: wp_index_widget\n"
+
+#. Plugin Name of the plugin
+#: index-widget.php
+msgid "Category Tags Index Widget"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: index-widget.php
+msgid "https://blog2k.ru/wp_index_widget"
+msgstr ""
+
+#. Description of the plugin
+#: index-widget.php
+msgid "The simplest way to automatically create indexes for your tags or category page as widget on your site"
+msgstr ""
+
+#. Author of the plugin
+#: index-widget.php
+msgid "Evgenii Zhirnov"
+msgstr ""
+
+#. Author URI of the plugin
+#: index-widget.php
+msgid "https://blog2k.ru"
+msgstr ""
