@@ -6,7 +6,7 @@ Description: The simplest way to automatically create indexes for your tags or c
 Version: 1.0.0
 Author: Evgenii Zhirnov
 Author URI: https://blog2k.ru
-Text Domain: index_widget
+Text Domain: wp_index_widget
 */
 
 class WP_Index_Widget extends WP_Widget {
