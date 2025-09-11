@@ -7,7 +7,7 @@ Version: 1.0.0
 Author: Evgenii Zhirnov
 Author URI: https://blog2k.ru
 Text Domain: wp_index_widget
-*/
+ */
 
 class WP_Index_Widget extends WP_Widget {
   public function __construct() {
@@ -16,6 +16,12 @@ class WP_Index_Widget extends WP_Widget {
       __('Category or tags index list', 'wp-index-widget'),
       array('description' => __('Index of current category or tag', 'wp-index-widget'))
     );			
+
+    $this->define_hooks();
+  }
+
+  function define_hooks() {
+    add_action('plugin_loaded', array($this, 'wp_index_widget_load_textdomain'));
   }
 
   function widget($args, $instance) {
@@ -119,21 +125,20 @@ class WP_Index_Widget extends WP_Widget {
 
     echo $args['after_widget'];
   }
+
+  function wp_index_widget_load_textdomain() {
+    load_plugin_textdomain(
+      'wp-index-widget',
+      false,
+      dirname(plugin_basename(__FILE__)) . '/languages'
+    );
+
+  }
 }
 
 function register_index_widget() {
   register_widget('Wp_Index_Widget');
 }
 add_action('widgets_init', 'register_index_widget');
-
-
-function wp_index_widget_load_textdomain() {
-  load_plugin_textdomain(
-    'wp-index-widget',
-    false,
-    dirname(plugin_basename(__FILE__)) . '/languages'
-  );
-}
-add_action('plugins_loaded', 'wp_index_widget_load_textdomain');
 
 ?>
